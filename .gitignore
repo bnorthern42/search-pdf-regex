@@ -2,6 +2,7 @@
 !parsePDF.jar
 #vim and it's swap files
 *.swp
+.idea/*
 # Logs
 logs
 *.log
