@@ -1,4 +1,4 @@
-# pdf-search-json
+# pdf-search-regex
 
 simple pdf search with regex
 
