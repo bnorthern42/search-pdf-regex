@@ -1,6 +1,6 @@
 {
   "name": "search-pdf-regex",
-  "version": "0.0.1",
+  "version": "0.1.0",
   "description": "Search over pdfs with REGEX, requires Java to be on machine",
   "main": "index.js",
   "scripts": {
@@ -19,6 +19,5 @@
     "url": "https://github.com/bnorthern42/pdfSearchBox/issues"
   },
   "homepage": "https://github.com/bnorthern42/pdfSearchBox#readme",
-  "dependencies": {
-  }
+  "dependencies": {}
 }
