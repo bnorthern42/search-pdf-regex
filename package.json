@@ -20,6 +20,5 @@
   },
   "homepage": "https://github.com/bnorthern42/pdfSearchBox#readme",
   "dependencies": {
-    "java-caller": "^2.4.0"
   }
 }

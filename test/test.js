@@ -7,5 +7,6 @@ const result = s.SearchPDF("dummy.pdf", "Dummy" , function(output, exit_code) {
     console.log('closing code: ' + exit_code);
     console.log('Full output of script: ', output);
    assert.equal(output, "Dummy");
+
 });
 
