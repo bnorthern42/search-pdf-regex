@@ -1,7 +1,7 @@
 {
   "name": "search-pdf-regex",
-  "version": "0.3.2",
-  "description": "Search over pdfs with REGEX, requires Java to be on machine",
+  "version": "0.3.3",
+  "description": "Search over pdfs with REGEX, Wrapped with Java",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" "
@@ -11,7 +11,7 @@
     "url": "git+https://github.com/bnorthern42/pdfSearchBox.git"
   },
   "keywords": [
-    "pdf"
+    "pdf", "pdfBox", "java", "search"
   ],
   "author": "bnorthern",
   "license": "ISC",
