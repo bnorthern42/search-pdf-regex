@@ -4,13 +4,23 @@ simple pdf search with regex
 
 
 ### run:
+- returns a promise
 
-see test dir for example
-
+```shell
+SearchPdf(<filename>, <searchTerm>)
+  	.then(out => {
+	 console.log(out);
+	})
+	.catch(err =>{
+	 console.log(err);
+	});
+```
 ### pre-prod.
 
 
 
 ### deps
 
-requires java on machine
+#### Requires Java
+
+- Uses PDFBox licensed under Apache

@@ -3,6 +3,8 @@
 #vim and it's swap files
 *.swp
 .idea/*
+target/*
+javaFiles/target/*
 # Logs
 logs
 *.log
