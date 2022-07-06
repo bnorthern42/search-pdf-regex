@@ -4,10 +4,10 @@ const path = require('path');
  * @param filename file to search with
  * @searchTerm regex search
  * */
-async function SearchPDF(filename,searchTerm){
+async function SearchPDF(filename,searchTerm, options=""){
 const jarfile = path.join(__dirname , 'javaJar/parsePDF.jar');
 var spawn = require('child_process').spawn;
-var child = spawn('java', ['-jar',jarfile,filename, searchTerm]);
+var child = spawn('java', ['-jar',jarfile,filename, searchTerm, options]);
   var scriptOutput = "";
     child.stdout.setEncoding('utf8');
     child.stdout.on('data', function(data) {
