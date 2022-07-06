@@ -45,25 +45,25 @@ public class ParsePDF {
         }
 
     }
-static String manpage= """
-         PARSE-PDF-REGEX(1)
-        NAME
-        \t parse-pdf-regex - a simple search for pdfs
-        SYNOPSIS
-        \t java -jar parsePDF.jar inputFile | searchString [options]DESCRIPTION
-        \tSearches over a PDF document and outputs one long string or outputs results in various formats
-        OPTIONS
-        \t  --json\tOutputs result in JSON format (not yet implemented)
-        \t --csv\tOutputs result in CSV format
-        \t --bool\tOutputs true or false if term exists in PDF
-        OPERANDS
-        \t inputFile\t A pdf file (REQUIRED)
-        \t searchTerm\t Either a simple string or REGEX (REQUIRED)
-        NOTES
-        \t While not applicable to the main library, the jar can be ran alone
-        DEPENDENCIES
-        \t PDFbox - Apache
-        AUTHORS
-        \t B. Northern
-        """;
+static String manpage= ""+
+         "PARSE-PDF-REGEX(1)\n"+
+        "NAME\n"+
+            " \t parse-pdf-regex - a simple search for pdfs\n"+
+            "   SYNOPSIS\n"+
+            "  \t java -jar parsePDF.jar inputFile | searchString [options]DESCRIPTION"+
+            "\tSearches over a PDF document and outputs one long string or outputs results in various formats\n"+
+            " OPTIONS\n"+
+            "  \t  --json\tOutputs result in JSON format (not yet implemented)\n"+
+            "\t --csv\tOutputs result in CSV format\n"+
+            " \t --bool\tOutputs true or false if term exists in PDF\n"+
+            " OPERANDS\n" +
+            "\t inputFile\t A pdf file (REQUIRED)\n"+
+            " \t searchTerm\t Either a simple string or REGEX (REQUIRED)\n"+
+            "NOTES\n"+
+            "\t While not applicable to the main library, the jar can be ran alone\n"+
+            " DEPENDENCIES\n"+
+            "\t PDFbox - Apache\n"+
+            " AUTHORS\n"+
+            " \t B. Northern\n"+
+        " 'now with Java 11 :P'";
 }

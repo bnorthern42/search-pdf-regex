@@ -5,9 +5,9 @@
 ```shell
 $ mvn clean compile assembly:single
 ```
-#### Rename file without version etc...
+#### copy file.
 ```shell
-mv /target/parsePDFJava* /target/parsePDF.jar
+./Copy.sh 
 ```
-
-
+#### Contributors
+- B. Northern
