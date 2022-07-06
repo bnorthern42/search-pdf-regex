@@ -1,45 +1,27 @@
 const path = require('path');
-
-/** 
+const Aigle = require('aigle');
+global.Promise = Aigle;
+/** Simplification, now works perfectly 
  * @param filename file to search with
  * @searchTerm regex search
  * */
 async function SearchPDF(filename,searchTerm, options=""){
 const jarfile = path.join(__dirname , 'javaJar/parsePDF.jar');
-var spawn = require('child_process').spawn;
+var spawn = require('child_process').spawnSync;
 var child = spawn('java', ['-jar',jarfile,filename, searchTerm, options]);
   var scriptOutput = "";
-    child.stdout.setEncoding('utf8');
-    child.stdout.on('data', function(data) {
-			//  console.log('stdout: ' + data);
+		scriptOutput+=child.stdout.toString().trim();
 
-        data=data.toString();
-        scriptOutput+=data;
-    });
+		if(child.stderr)
+				scriptOutput+=child.stderr;
 
-    child.stderr.setEncoding('utf8');
-    child.stderr.on('data', function(data) {
-        console.log('stderr: ' + data);
-
-        data=data.toString();
-        scriptOutput+=data;
-    });
-
-    child.on('close', function(code) {
-    	
-    });
-
- const promise = new Promise(resolve => resolve(scriptOutput));
+ const promise = new Aigle((resolve, reject) => resolve(scriptOutput));
      const out =  await promise;
-	    return out;
+	    return out.toString();
 
 
 }
 
 module.exports = {SearchPDF};
-/**
- * not even gonna deny it, code adapted from: 'Stuck'Overflow 
- * https://stackoverflow.com/questions/14332721/node-js-spawn-child-process-and-get-terminal-output-live
- * added promise stuff
- * */
+
 
