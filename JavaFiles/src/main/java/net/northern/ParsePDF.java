@@ -29,7 +29,7 @@ public class ParsePDF {
 
             }
             fileName=args[0];
-            if(!fileName.contains(".pdf") || !fileName.contains(".PDF")){
+            if(fileName.length()== 0){
                 System.out.println("Filetype probably not supported\n Run --help for help");
             }
             SearchTerm=args[1];

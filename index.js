@@ -11,7 +11,7 @@ var child = spawn('java', ['-jar',jarfile,filename, searchTerm, options]);
   var scriptOutput = "";
     child.stdout.setEncoding('utf8');
     child.stdout.on('data', function(data) {
-        console.log('stdout: ' + data);
+			//  console.log('stdout: ' + data);
 
         data=data.toString();
         scriptOutput+=data;
@@ -26,7 +26,7 @@ var child = spawn('java', ['-jar',jarfile,filename, searchTerm, options]);
     });
 
     child.on('close', function(code) {
-    
+    	
     });
 
  const promise = new Promise(resolve => resolve(scriptOutput));
