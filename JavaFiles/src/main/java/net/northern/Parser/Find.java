@@ -14,7 +14,7 @@ public class Find {
  * @return  String of all occurrences
  * TODO: JSON formatting
  **/
-    public  String ReturnOccurences(String filePath, String regex, String Options) throws IOException {
+    public  String ReturnOccurences(String filePath, String regex, String Options){
         String opt = null;
         if(Options.contains("CSV"))
             opt=",";
