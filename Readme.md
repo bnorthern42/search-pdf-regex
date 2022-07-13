@@ -35,8 +35,10 @@ SearchPdf(<filename>, <searchTerm>, [option])
 - 0.3.4
 	- now beta 'ish' 
 	- changed child processes to child_process Sync
-- 0.3.5a
+- 0.3.5
 	- Clode cleanup
+	- Better error messages
+	-
 	
 #### Requires Java Version 11 or greater
 
