@@ -5,6 +5,7 @@ global.Promise = Aigle;
 /** Simplification, now works perfectly 
  * @param filename file to search with
  * @searchTerm regex search
+ * @return String based on option
  * */
 async function SearchPDF(filename,searchTerm, options=""){
 const jarfile = path.join(__dirname , 'javaJar/parsePDF.jar');
