@@ -6,6 +6,7 @@ import org.apache.pdfbox.text.PDFTextStripper;
 
 import java.io.File;
 import java.io.IOException;
+import java.util.Objects;
 
 public class PDF2Text {
 
@@ -13,8 +14,8 @@ public class PDF2Text {
 
 
     public static   String Convert(String FilePath){
-        String ext = getExtension( getFileName(FilePath)).toLowerCase();
-        if(ext!=SupportedExtension  ) {
+        String ext =FilenameUtils.getExtension(FilePath);
+        if(!Objects.equals(ext, SupportedExtension)) {
             throw new RuntimeException(" Wrong File type, given:  " + ext + " \n\tHowever,  " + SupportedExtension  + "  was Expected!");
         }
 

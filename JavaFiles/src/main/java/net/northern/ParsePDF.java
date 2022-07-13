@@ -5,7 +5,7 @@ import net.northern.Parser.Find;
 import java.io.IOException;
 
 public class ParsePDF {
-    static String Options;
+    static String Options = "";
     public static void main(String[] args) throws IOException {
         if (args.length == 0)
         {
