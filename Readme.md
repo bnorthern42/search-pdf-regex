@@ -38,11 +38,12 @@ SearchPdf(<filename>, <searchTerm>, [option])
 - 0.3.5
 	- Clode cleanup
 	- Better error messages
-	-
+- 0.3.6
+	- Downgraded to java 8 for more broad support	
 	
-#### Requires Java Version 11 or greater
+#### Requires Java Version 8 or greater
 
-- Uses PDFBox licensed under Apache
+- Uses [PDFBox](https://pdfbox.apache.org/) a project under the [Apache Software Foundation](https://apache.org/)
 
 #### Compatibility 
 - [Cypress](https://www.cypress.io/)
