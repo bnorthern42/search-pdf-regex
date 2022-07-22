@@ -40,7 +40,8 @@ SearchPdf(<filename>, <searchTerm>, [option])
 	- Better error messages
 - 0.3.6
 	- Downgraded to java 8 for more broad support	
-	
+- 0.3.7
+	- Added Logging Options	
 #### Requires Java Version 8 or greater
 
 - Uses [PDFBox](https://pdfbox.apache.org/) a project under the [Apache Software Foundation](https://apache.org/)

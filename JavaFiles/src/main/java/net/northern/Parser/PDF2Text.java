@@ -1,15 +1,17 @@
 package net.northern.Parser;
 
+import net.northern.ParsePDF;
 import org.apache.commons.io.FilenameUtils;
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
 import org.apache.pdfbox.pdmodel.PDDocument;
 import org.apache.pdfbox.text.PDFTextStripper;
-
 import java.io.File;
 import java.io.IOException;
 import java.util.Objects;
 
 public class PDF2Text {
-
+    private static final Logger LOG = LogManager.getLogger(PDF2Text.class);
    private final static String  SupportedExtension = "pdf";
 
 
@@ -25,7 +27,8 @@ public class PDF2Text {
             PDDocument doc =  PDDocument.load(file);
             return new PDFTextStripper().getText(doc);
         } catch (IOException e) {
-            System.out.println("Error in Trying to convert PDF: " + e.getMessage());
+            LOG.warn("Error in Trying to convert PDF: {}", e.getMessage());
+
             return  null;
         }
 
