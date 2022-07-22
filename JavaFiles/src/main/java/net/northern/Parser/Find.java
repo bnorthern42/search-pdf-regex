@@ -6,6 +6,8 @@ import java.util.regex.Pattern;
 
 public class Find {
 
+
+
     public Find() {
     }
 /** searches pdf with regex
