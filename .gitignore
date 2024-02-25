@@ -5,6 +5,7 @@
 .idea/*
 target/*
 JavaFiles/target/*
+JavaFiles/.idea
 # Logs
 logs
 *.log
