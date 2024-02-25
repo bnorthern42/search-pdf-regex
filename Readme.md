@@ -42,6 +42,8 @@ SearchPdf(<filename>, <searchTerm>, [option])
 	- Downgraded to java 8 for more broad support	
 - 0.3.7
 	- Added Logging Options	
+- 0.3.8
+	- Updated Async package dependency
 #### Requires Java Version 8 or greater
 
 - Uses [PDFBox](https://pdfbox.apache.org/) a project under the [Apache Software Foundation](https://apache.org/)
